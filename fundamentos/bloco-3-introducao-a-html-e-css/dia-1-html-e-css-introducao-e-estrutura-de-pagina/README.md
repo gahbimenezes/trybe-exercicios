@@ -46,3 +46,5 @@ Seu Portfólio Web deve ter as seguintes informações:
     Partes do seu portfólio destacadas com negrito e/ou itálico;
 
     Um índice com links internos para as diferentes seções do seu portfólio.
+
+Esse portfólio pode ser acessado em (gahbimenezes.github.io)
