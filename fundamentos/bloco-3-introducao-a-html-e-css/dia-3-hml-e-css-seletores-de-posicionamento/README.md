@@ -13,3 +13,14 @@ Vamos praticar? Primeiro veja o layout de caixas abaixo:
 [box model](css-box-model-example.png)
 
 Agora vamos reproduzir esse esquema de itens no seu browser! Copie os códigos abaixo e cole-os no seu VS Code, criando um arquivo index.html e um arquivo style.css .
+
+
+### REQUISITOS DO SEGUNDO EXERCÍCIO:
+
+Personagens pertencentes à Nintendo©
+
+1 - Posicione o Mário acima do Goomba.
+
+2 - Posicione a tag p para que fique dentro do balão de fala.
+
+3 - Posicione o balão para que se torne uma fala de Bowser.
