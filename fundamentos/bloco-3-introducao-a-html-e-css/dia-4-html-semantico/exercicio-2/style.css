@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cls-cabecalho {
+    background-color: teal;
+    width: 100%;
+    height: fit-content;
+}
+
+.cls-cabecalho h1 {
+    font-family: 'Paprika';
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;    
+}
+
+#chamada {
+    font-size: 1.5em;
+}
+
+.cls-cabecalho img {
+    display: block;
+    width: 50%;
+    margin: auto; 
+}
+
+.cls-cabecalho nav {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cls-cabecalho nav ul li {
+    display: inline-block; 
+}
+
+.cls-cabecalho nav ul li a {
+    text-decoration: none;
+    font-family: Paprika;
+    font-size: 30px;
+    color: white;
+    margin: 20px    
+}
+
+.cls-main {
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+}
+
+.cls-main h2 {
+    font-family: Paprika;
+    font-size: 2em;
+    color: teal;
+    padding: 20px;
+    width: fit-content;    
+    margin-left: auto;
+    margin-right: auto;     
+}
+
+#sct1 {
+    width: 60%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 30px;   
+}
+
+#sct1 img {
+    width: 400px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#sct1 h3 {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto; 
+    font-family: Paprika;
+    color: #4d21ac;
+    font-size: 1.5em; 
+    padding: 20px;
+}
+
+#sct1 p {
+    font-family: Paprika;
+    color: darkslategray;
+    font-size: 16px; 
+    text-indent: 20pt;
+    line-height: 30px;
+    padding-left: 30px;  
+    padding-right: 30px;     
+}
+
+#sct1 h4 {
+    display: inline-block;
+    font-family: Paprika;
+    color: darkslategray;
+    font-size:16px;
+    margin: 20px;
+    margin-left: 50px;
+}
+
+#sct1 table {
+    width: fit-content;
+    display: inline-block; 
+    border-collapse: collapse;
+    margin-left: 40px;
+}
+
+.table tr, th , td {
+    border: 1px solid black;
+    padding: 5px;   
+    font-family: Paprika;
+    color: darkslategray;
+}
+
+.cls-aside {
+    display: inline-block;
+    background-color: teal;
+    width: 35%;
+    height: 555px;
+    position: absolute;
+    top: 710px;
+    margin-left: 25px;
+    margin-top: 35px;
+}
+
+.cls-aside p {
+    font-family: Paprika;
+    color: white;
+    font-size: 20px; 
+    padding: 15px;    
+}
+
+#video1 {
+    margin-left: 15px;    
+}
+
+#video2 {
+    margin-left: 15px;    
+}
+
+#sct2 {
+    width: 97%;
+    margin: 30px;
+    margin-top: 60px; 
+}
+
+#sct2 img {
+    width: 400px;
+    float: right;
+    margin: 20px;
+    margin-left: 20px;
+   
+}
+
+#sct2 h3 {
+    font-family: Paprika;
+    color: #087196;
+    font-size: 1.5em; 
+    padding: 80px;
+}
+
+#sct2 p {
+    font-family: Paprika;
+    color: darkslategray;
+    font-size: 16px; 
+    text-indent: 20pt;
+    line-height: 30px;
+    padding-right: 30px;     
+}
+
+#sct3 {
+    width: 97%;
+    margin: 20px; 
+    margin-top: 100px;    
+}
+
+#sct3 img {
+    width: 400px;
+    float: left;
+    margin-right: 20px; 
+    margin-top: 20px;       
+}
+
+#sct3 h3 {
+    font-family: Paprika;
+    color: #08966E;
+    font-size: 1.5em; 
+    padding: 20px;
+}
+
+#sct3 p {
+    font-family: Paprika;
+    color: darkslategray;
+    font-size: 16px; 
+    text-indent: 20pt;
+    line-height: 30px;
+    padding-left: 30px;  
+    padding-right: 20px;  
+}
+
+#sct4 {
+    width: 97%;
+    margin: 20px; 
+    margin-top: 100px;    
+}
+
+#sct4 h3 {
+    font-family: Paprika;
+    color: #8c5cbb;
+    font-size: 1.5em; 
+    padding: 20px;  
+}
+
+#sct4 ul li {
+   list-style: none;   
+   line-height: 30px;
+}
+
+#sct4 ul li a {
+    text-decoration: none;
+    font-family: Paprika;
+    color: darkslategray;
+ }
+
+ #sct4 ul li a:hover {
+    background-color: teal;
+    color: white;
+    font-size: 20px;
+}
+
+.cls-rodape {
+    background-color: teal;
+    width: 97%;
+    height: 40px;
+    margin: 20px;
+}
+
+.cls-rodape p {
+    font-family: Paprika;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
