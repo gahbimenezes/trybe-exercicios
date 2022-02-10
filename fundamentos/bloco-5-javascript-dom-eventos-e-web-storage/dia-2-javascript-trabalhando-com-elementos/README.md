@@ -23,3 +23,14 @@ O conteúdo desse dia é dedicado a instruir a busca de elementos por meio do Ja
 8. Agora acesse o terceiroFilho a partir de pai .
 
 
+
+### REQUISITOS DA ATIVIDADE DE PRÁTICA 2
+
+
+1. Crie um irmão para elementoOndeVoceEsta .
+
+2. Crie um filho para elementoOndeVoceEsta .
+
+3. Crie um filho para primeiroFilhoDoFilho .
+
+4. A partir desse filho criado, acesse terceiroFilho .
