@@ -34,3 +34,9 @@ O conteúdo desse dia é dedicado a instruir a busca de elementos por meio do Ja
 3. Crie um filho para primeiroFilhoDoFilho .
 
 4. A partir desse filho criado, acesse terceiroFilho .
+
+
+
+### REQUISITOS DA ATIVIDADE DE PRÁTICA 3
+
+Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
