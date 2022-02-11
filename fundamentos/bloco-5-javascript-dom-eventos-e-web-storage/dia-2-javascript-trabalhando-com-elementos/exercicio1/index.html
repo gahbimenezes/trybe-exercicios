@@ -61,19 +61,26 @@
 
 
       function addTags (element, classe, path, text) {
-          let variable = document.createElement(element);
-          variable.className = classe ;
-          path.appendChild(variable);
+        let variable = document.createElement(element);
+        variable.className = classe ;
+        path.appendChild(variable);
 
-          //consulta com amigo programador
-           if (typeof text == 'string') {
-             variable.innerText = text;
-           }   
+        //consulta com amigo programador
+        if (typeof text == 'string') {
+          variable.innerText = text;
+        }   
            
-           return variable;
-        }
+        return variable;
+      }
+
+      
+
+    
+      
+      
         
-      //item 1
+      //item 1 do exercíio 1
+      //e item 1 do exercício 2
       addTags("h1", "title", document.body, "Exercício 5.2 - JavaScript DOM")
 
 
@@ -105,7 +112,7 @@
 
       //item 8
       
-      let listItens = addTags("ul", "lista", document.getElementsByClassName("right-content")[0]);
+      let list = addTags("ul", "lista", document.getElementsByClassName("right-content")[0]);
       
       lista_ul = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"]
 
@@ -113,20 +120,47 @@
             
             let texto = lista_ul[index];
 
-            addTags("li", "", listItens, texto);    
+            addTags("li", "listItens", list, texto);    
         }
 
-      //item 9
+      //item 9 do exercício 1 e item 2 do exercício 2
+            
+      addTags("h3", "description", main, "texto 1" );
+
+      addTags("h3", "description", main, "texto 2" );
       
-      addTags("h3", "", main, "texto 1" );
+      addTags("h3", "description", main, "texto 3" );
 
-      addTags("h3", "", main, "texto 2" );
+
+      //item 3 do exercício 2
+
+      function toRemove (parent, element) {
+        let variable1 = document.querySelector(parent);
+        let variable2 = document.querySelector(element);
+        variable1.removeChild(variable2);
+      }
+
+      toRemove(".main-content", ".main-content .left-content");
+
+      //item 4 do exercício 2
+
+      let centralize = document.querySelector(".right-content");
+      centralize.style.margin = "auto auto";
+
+      //item 5 do exercício 2
+    
+     let newColor = document.querySelector("main");
+     newColor.style.backgroundColor = "green";
+        
+      //item 6 do exercício 2
+
+           
+      let listRemove = document.querySelector(".lista");
+      listRemove.removeChild(listRemove.lastElementChild);
+      listRemove.removeChild(listRemove.lastElementChild);
       
-      addTags("h3", "", main, "texto 3" );
-
-
-
-
+         
+    
     </script>
   </body>
 </html>
