@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+
+
+      function addTags (element, classe, path, text) {
+          let variable = document.createElement(element);
+          variable.className = classe ;
+          path.appendChild(variable);
+
+          //consulta com amigo programador
+           if (typeof text == 'string') {
+             variable.innerText = text;
+           }   
+           
+           return variable;
+        }
+        
+      //item 1
+      addTags("h1", "title", document.body, "Exercício 5.2 - JavaScript DOM")
+
+
+      //item 2
+
+      main = addTags("main", "main-content", document.body);
+
+      //item 3 
+      
+      addTags("section", "center-content",main)
+
+      //item 4
+      
+      addTags("p","", document.getElementsByClassName("center-content")[0], "Adição de parágrafo com texto");
+
+      //item 5
+      
+      addTags("section", "left-content", main);
+
+      //item 6
+      
+      addTags("section", "right-content", main);
+       
+      //item 7
+      
+      img = addTags("img", "small-image", document.getElementsByClassName("left-content")[0]);
+      
+      img.src= "https://picsum.photos/200";
+
+      //item 8
+      
+      let listItens = addTags("ul", "lista", document.getElementsByClassName("right-content")[0]);
+      
+      lista_ul = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"]
+
+        for (let index = 0; index < lista_ul.length; index+= 1) {
+            
+            let texto = lista_ul[index];
+
+            addTags("li", "", listItens, texto);    
+        }
+
+      //item 9
+      
+      addTags("h3", "", main, "texto 1" );
+
+      addTags("h3", "", main, "texto 2" );
+      
+      addTags("h3", "", main, "texto 3" );
+
+
+
+
+    </script>
+  </body>
+</html>
