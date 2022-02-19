@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;          
+}
+
+#body {
+    background-color: rgb(76, 164, 109);  
+}
+
+#form {
+    width: 60%;
+    padding: 50px;
+    margin: 50px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: #e0e4e7;        
+}
+
+#form * {
+    margin-bottom: 20px;        
+}
+
+#form h1 {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+#nome {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px; 
+    border-radius: 5px;
+}
+
+#email {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+} 
+
+#destinos {
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.destino {
+    margin-left: 80px;
+    
+}
+
+#text-area {
+    resize: none;
+    border-radius: 5px;
+}
+
+#btn-enviar {
+    font-size: 16px;
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+#btn-limpar {
+    font-size: 16px;
+    padding: 20px;
+    /* margin-left: 40px; */
+    margin: 20px;
+}
