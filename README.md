@@ -27,36 +27,36 @@ O programa tem mais de 1.500 horas de aulas presenciais e online, e apresenta a 
 - [x] 3-4: _HTML semântico_
 - [x] 3-5: _ [Projeto - HTML e CSS] () _
 
-##### Bloco 4: Introdução - JavaScript :hourglass_flowing_sand:
+##### Bloco 4: Introdução - JavaScript :white_check_mark:
 
 - [x] 4-1: _JavaScript - Introdução_
 - [x] 4-2: _JavaScript - Array e Loop For_
-- [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+- [] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [x] 4-4: _JavaScript - Objetos e Recursos_
-- [] 4-5: _ [Projeto - Funções do Playground] () _
+- [x] 4-5: _ [Projeto - Funções do Playground] () _
 
-##### Bloco 5: Introdução - JavaScript - Projetos
+##### Bloco 5: Introdução - JavaScript - Projetos :white_check_mark:
 
-- [] 5-1: _JavaScript - DOM e seletores_
-- [] 5-2: _JavaScript - Trabalhando com itens_
+- [x] 5-1: _JavaScript - DOM e seletores_
+- [x] 5-2: _JavaScript - Trabalhando com itens_
 - [] 5-3: _JavaScript - Eventos_
 - [] 5-4: _JavaScript - Armazenamento na Web_
 - [] 5-5: _ [Projeto - Gerador de Memes] () _
-- [] 5-6: _ [Projeto - Pixel Art] () _
-- [] 5-7: _ [Projeto - Lista de tarefas] () _
+- [x] 5-6: _ [Projeto - Pixel Art] () _
+- [x] 5-7: _ [Projeto - Lista de tarefas] () _
 - [] 5-7: _ [Projeto - Adivinhe a Cor] () _
 - [] 5-7: _ [Projeto - Carta Misteriosa] () _
 
-##### Bloco 6: HTML e CSS avançados
+##### Bloco 6: HTML e CSS avançados :white_check_mark:
 
-- [] 6-1: _HTML e CSS - Formulários_
+- [x] 6-1: _HTML e CSS - Formulários_
 - [] 6-2: _Bibliotecas Javascript e Estruturas CSS_
 - [] 6-3: _CSS Flexbox - Parte 1_
-- [] 6-4: _CSS Flexbox - Parte 2_
+- [x] 6-4: _CSS Flexbox - Parte 2_
 - [] 6-5: _CSS responsivo - Mobile First_
-- [] 6-6: _ [Projeto - página inicial do Facebook] () _
+- [x] 6-6: _ [Projeto - Trybewarts] () _
 
-##### Bloco 7: JavaScript ES6 e testes de unidade
+##### Bloco 7: JavaScript ES6 e testes de unidade :hourglass_flowing_sand:
 
 - [] 7-1: _JavaScript ES6 - let, const, funções de seta e literais de modelo_
 - [] 7-2: _JavaScript ES6 - Objetos_
