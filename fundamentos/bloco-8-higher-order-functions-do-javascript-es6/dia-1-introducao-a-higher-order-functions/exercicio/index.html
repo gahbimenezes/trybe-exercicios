@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+            // item 1
+
+            const funcionario = (nome) => {
+                let email = `${nome.replace(/ /g, '_')}@trybe.com`
+                return { nomecompleto: nome, email: email.toLowerCase() }
+            }
+
+            funcionario('Gabriela Rosa Menezes')
+
+            const newEmployees = () => {
+                const employees = {
+                    id1: funcionario('Pedro Guerra'), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
+                    id2: funcionario('Luiza Drumond'), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
+                    id3: funcionario('Carla Paiva'), // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro, substituindo as aspas
+                }
+                return employees;
+            };
+
+            console.log(newEmployees());
+
+
+          // item 2
+
+            const compara = (aposta, numeroSorteado) => aposta === numeroSorteado 
+
+            // console.log(compara(5));
+
+            const resultadoDoSorteio = (aposta, callback) => {
+
+                const numeroSorteado = Math.floor((Math.random() * 5) + 1);
+
+               return callback(aposta, numeroSorteado) ? `Parabéns você ganhou` : `Tente novamente`
+
+            }
+
+            console.log(resultadoDoSorteio(5, compara));
+
+        // item 3
+
+        //referencia: Gabarito Trybe
+
+        const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+        const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+        const compareAnswers = (rightAnswer, studentAnswer) => {
+            if (rightAnswer === studentAnswer) {
+                return 1;
+            } if (studentAnswer === 'N.A') {
+                return 0;
+            }
+            return -0.5;
+        };
+
+        const countPoints = (rightAnswers, studentAnswers, action) => {
+            let contador = 0;
+            for (let index = 0; index < rightAnswers.length; index += 1) {
+                const actionReturn = action(rightAnswers[index], studentAnswers[index]);
+                contador += actionReturn;
+            }
+            return `Resultado final: ${contador} pontos`;
+        };
+
+        console.log(countPoints(RIGHT_ANSWERS, STUDENT_ANSWERS, compareAnswers));
+
+
+
+
+    </script>
+</body>
+
+</html>
