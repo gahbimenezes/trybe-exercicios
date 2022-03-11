@@ -70,7 +70,6 @@ function authorWith3DotsOnName(array) {
   const obj = array.filter((item) => (item.author.name[7] === '.'));
 
   return obj[0].name;
-
   
 }
 
