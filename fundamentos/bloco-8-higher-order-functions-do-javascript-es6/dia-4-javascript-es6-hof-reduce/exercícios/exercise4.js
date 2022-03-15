@@ -59,31 +59,40 @@ const books = [
       },
       releaseYear: 1928,
     },
-];
+  ];
   
-// Adicione o código do exercício aqui:
+  // Adicione o código do exercício aqui:
 
-const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
+const expectedResult = {
+    id: 1,
+    name: 'As Crônicas de Gelo e Fogo',
+    genre: 'Fantasia',
+    author: {
+      name: 'George R. R. Martin',
+      birthYear: 1948,
+    },
+    releaseYear: 1991,
+  };
+  
+  function longestNamedBook(array) {
+    // escreva seu código aqui
 
-//meu código
+    // const nameSize = array.reduce((acc, item, index) => acc < item.name.length ? console.log('sim') : console.log('não'), 0);
 
-// function reduceNames(array) {
-//   // escreva seu código aqui
-//   const allAuthors = array.reduce((acc, item) => acc + `${item.author.name}, `, '');
-//   return allAuthors
-// }
+    // const nameSize = array.reduce((acc, item,index) => {
+    //   if (acc < item.name.length) {
+    //     console.log('sim')
+    //    return nameSize
+    //   }
+    // }, 0)
+    
+    
+    return array.reduce((acc, item) => {
+      if (acc > item.name.length){
+        return item
+      }
+      return acc
+    })   
+  }
 
-// console.log(reduceNames(books)); 
-
-// GABARITO
-
-function reduceNames() {
-  const names = books.reduce((acc, book, index, array) => {
-    if (index === array.length - 1) return `${acc} ${book.author.name}.`;
-    return `${acc} ${book.author.name},`;
-    console.log(acc);
-  }, '');
-  return names.trim();
-}
-
-console.log(reduceNames());
+  console.log(longestNamedBook(books));
